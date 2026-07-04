@@ -28,5 +28,5 @@ This project was developed as part of a Digital Business community service and M
 
 ## Author
 
-Digital Business Student
-Universitas (Nama Kampusmu)
+Nalendra/La Yandi
+Universitas Politeknik Akbara
