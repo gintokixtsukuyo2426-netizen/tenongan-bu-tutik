@@ -21,22 +21,20 @@
                     <span class="logo-subtitle">Bu Tutik</span>
                 </div>
             </div>
-       <nav class="nav-menu">
+            <nav class="nav-menu">
                 <a href="#keunggulan">Keunggulan</a>
                 <a href="#menu">Menu Populer</a>
                 <a href="#testimoni">Testimoni</a>
                 <a href="#analisis">Analisis Bisnis (UAS)</a>
-                
-                <!-- Tautan Deep Linking Instagram Baru (Paling Kanan) -->
                 <a href="https://www.instagram.com/warungtenonganbututik?igsh=MWFhaWpxbnltNzdmdA==" 
                    target="_blank" 
                    class="btn-nav-instagram" 
                    title="Buka Instagram Bu Tutik">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-
                 <a href="#pesan" class="btn-cta-nav">Pesan <i class="fa-solid fa-cart-shopping"></i></a>
             </nav>
+        </div>
     </header>
 
     <section class="hero">
@@ -50,15 +48,13 @@
                     <a href="#pesan" class="btn btn-primary">Simulasikan Pesanan <i class="fa-solid fa-chevron-right"></i></a>
                     <a href="#menu" class="btn btn-secondary">Lihat Semua Menu <i class="fa-solid fa-utensils"></i></a>
                 </div>
-            </div> <!-- Penutup untuk hero-text -->
-            
+            </div>
             <div class="hero-visual">
                 <div class="image-frame">
                     <img src="image/gambar1.jpg.jpeg" alt="Arem-arem Mie Bu Tutik">
                 </div>
             </div>
-            
-        </div> <!-- Penutup untuk container hero-grid -->
+        </div>
     </section>
 
     <section id="keunggulan" class="benefits">
@@ -213,7 +209,7 @@
                     <div class="user-profile">
                         <div class="avatar">RN</div>
                         <div>
-                            <h4>Raden Bagus.</h4>
+                            <h4>Raden Agus.</h4>
                             <span>Orang Tua Murid</span>
                         </div>
                     </div>
@@ -269,7 +265,7 @@
                         <tbody>
                             <tr>
                                 <td><strong>Google Maps</strong></td>
-                                <td><span class="badge-red">⚠️ Belum Terbaca Optimal</span></td>
+                                <td><span class="badge-red">❌ Belum Ada</span></td>
                                 <td>Pembaruan pin akurat & optimasi deskripsi kata kunci "Tenongan Jebres"</td>
                             </tr>
                             <tr>
@@ -296,88 +292,79 @@
 
     <section id="pesan" class="order-section">
         <div class="container order-grid">
+            
             <div class="order-info">
                 <span class="section-subtitle">Kalkulator Pesanan</span>
-                <h2>Simulasi & Rekap Anggaran Belanja</h2>
-                <p>Gunakan sistem simulator ini untuk membantu menghitung total biaya pesanan pelanggan atau pesanan dalam jumlah besar untuk rapat/acara secara instan.</p>
-                <div class="steps">
-                    <div class="step-item"><span class="step-num">1</span> <div><strong>Nama Pelanggan:</strong> Tulis identitas pemesan.</div></div>
-                    <div class="step-item"><span class="step-num">2</span> <div><strong>Atur Jumlah:</strong> Masukkan jumlah item jajanan yang diinginkan.</div></div>
-                    <div class="step-item"><span class="step-num">3</span> <div><strong>Kirim WA:</strong> Data akan dikonversi menjadi format pesan teks WhatsApp rapi.</div></div>
+                <h2>Simulasi & Rekap Anggaran</h2>
+                <p>Gunakan sistem simulator ini untuk membantu menghitung total biaya pesanan pelanggan secara instan.</p>
+                
+                <div class="steps" style="margin-bottom: 20px;">
+                    <div class="step-item"><span class="step-num">1</span> <div><strong>Nama Pelanggan:</strong> Masukkan identitas pemesan.</div></div>
+                    <div class="step-item"><span class="step-num">2</span> <div><strong>Atur Jumlah:</strong> Masukkan jumlah item jajanan.</div></div>
+                    <div class="step-item"><span class="step-num">3</span> <div><strong>Kirim WA:</strong> Data otomatis dikonversi menjadi teks.</div></div>
+                </div>
+
+                <div class="map-wrapper-simulator">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.132172776485!2d110.8406063!3d-7.559487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a17004f29df5b%3A0xa193d6ddbb53b49e!2sWarung%20Tenongan%20Bu%20Tutik!5e0!3m2!1sid!2sid!4v1719912345678!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="260" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <!-- Tombol langsung buka di Google Maps / navigasi GPS -->
+                    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+                        <a href="https://maps.app.goo.gl/4ijtmMo1VZHZ6kpz6" 
+                           target="_blank"
+                           style="flex:1; display:flex; align-items:center; justify-content:center; gap:8px;
+                                  background:#1a73e8; color:#fff; text-decoration:none;
+                                  padding:10px 16px; border-radius:8px; font-size:14px; font-weight:600;">
+                            <i class="fa-solid fa-map-location-dot"></i> Buka di Google Maps
+                        </a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=-7.5596633,110.8431643&destination_place_id=0xac9afc2f96a1576e" 
+                           target="_blank"
+                           style="flex:1; display:flex; align-items:center; justify-content:center; gap:8px;
+                                  background:#16a34a; color:#fff; text-decoration:none;
+                                  padding:10px 16px; border-radius:8px; font-size:14px; font-weight:600;">
+                            <i class="fa-solid fa-route"></i> Navigasi ke Sini
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="order-form-container">
-                <div class="order-form">
-                    <h3>Formulir Simulator</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Nama Pembeli</label>
-                            <input id="order-name" type="text" placeholder="Nama pembeli / instansi...">
-                        </div>
-                        <div class="form-group">
-                            <label>Jam Pengambilan</label>
-                            <input id="order-time" type="time" value="07:00">
-                        </div>
-                    </div>
 
-                    <div class="calculator-list">
-                        <label class="calc-label">Daftar Menu & Kuantitas</label>
-                        
-                        <div class="calc-row highlight-row">
-                            <div><h4>⭐ Arem-Arem Mie (Hero)</h4><span>Rp3.500</span></div>
-                            <div class="counter"><button onclick="changeQuantity('arem', -1)">-</button><span id="qty-arem">0</span><button onclick="changeQuantity('arem', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Chicken Katsu Sambal Matah</h4><span>Rp12.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('katsu', -1)">-</button><span id="qty-katsu">0</span><button onclick="changeQuantity('katsu', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Nasi Goreng</h4><span>Rp10.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('nasgor', -1)">-</button><span id="qty-nasgor">0</span><button onclick="changeQuantity('nasgor', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Sosis Jumbo</h4><span>Rp7.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('sosisJumbo', -1)">-</button><span id="qty-sosisJumbo">0</span><button onclick="changeQuantity('sosisJumbo', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Kremes Kaldu Ayam</h4><span>Rp5.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('kremes', -1)">-</button><span id="qty-kremes">0</span><button onclick="changeQuantity('kremes', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Jenang Tradisional</h4><span>Rp5.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('jenang', -1)">-</button><span id="qty-jenang">0</span><button onclick="changeQuantity('jenang', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Balung Kethek</h4><span>Rp4.000</span></div>
-                            <div class="counter"><button onclick="changeQuantity('balung', -1)">-</button><span id="qty-balung">0</span><button onclick="changeQuantity('balung', 1)">+</button></div>
-                        </div>
-                        <div class="calc-row">
-                            <div><h4>Aneka Jajanan Pasar (Serba 2.5k)</h4><span>Rp2.500</span></div>
-                            <div class="counter"><button onclick="changeQuantity('jajanan', -1)">-</button><span id="qty-jajanan">0</span><button onclick="changeQuantity('jajanan', 1)">+</button></div>
-                        </div>
-                    </div>
-
-                   <div class="total-box">
-                        <div>
-                            <span class="total-title">Total Anggaran Belanja</span>
-                            <span class="total-subtitle">*Estimasi harga di tempat</span>
-                        </div>
-                        <span id="total-price" class="total-amount">Rp0</span>
-                    </div>
-
-                    <!-- Tombol 1: Kirim Rekap ke WhatsApp -->
-                    <button onclick="sendOrder()" class="btn-whatsapp" style="margin-bottom: 12px;">
-                        Kirim Struktur Teks ke WhatsApp <i class="fa-brands fa-whatsapp"></i>
-                    </button>
-
-                    <!-- Tombol 2: Petunjuk Rute Google Maps (Deep Linking) -->
-                    <a href="https://www.google.com/maps/search/?api=1&query=-7.558364,110.842795" 
-                       target="_blank" 
-                       class="btn-maps-kalkulator">
-                        Petunjuk Rute Lokasi (Depan PMI) <i class="fa-solid fa-map-location-dot"></i>
-                    </a>
+            <div class="order-card">
+                <h3 class="form-title">Formulir Simulator</h3>
+                
+                <!-- FIX: ID diseragamkan dengan JS (buyer-name & pickup-time) -->
+                <div class="form-group">
+                    <label class="form-label">NAMA PEMBELI</label>
+                    <input type="text" id="buyer-name" class="form-control" placeholder="Nama pembeli / instansi...">
                 </div>
+
+                <div class="form-group">
+                    <label class="form-label">JAM PENGAMBILAN</label>
+                    <input type="time" id="pickup-time" class="form-control" value="07:00">
+                </div>
+
+                <label class="form-label">DAFTAR MENU & KUANTITAS</label>
+                <!-- FIX: container tunggal, diisi oleh renderMenu() -->
+                <div id="menu-items-container"></div>
+
+                <div class="total-box">
+                    <div>
+                        <span class="total-title">Total Anggaran Belanja</span>
+                        <span class="total-subtitle">*Estimasi harga di tempat</span>
+                    </div>
+                    <span id="total-price" class="total-amount">Rp0</span>
+                </div>
+
+                <button onclick="sendOrder()" class="btn-whatsapp">
+                    Kirim Struktur Teks ke WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                </button>
             </div>
+
         </div>
     </section>
 
@@ -388,7 +375,9 @@
                     <div class="logo-icon">T</div>
                     <span class="logo-title text-white">Tenongan Bu Tutik</span>
                 </div>
-                <p>Mitra UMKM Projek UAS Analisis Strategi Digital - Politeknik Akbara Surakarta 2026.</p>
+                <p>Mitra UMKM Projek UAS Mata Kuliah Manajemen Ads<br>
+                <span style="font-size:13px;">Oleh: <strong>Nalendra W.H.P</strong> (BD2303008) &amp; <strong>La Yandi</strong> (BD2303005)</span><br>
+                <span style="font-size:12px; opacity:0.8;">Politeknik Akbara Surakarta 2026</span></p>
             </div>
             <div>
                 <h3>Jam Operasional</h3>
@@ -400,64 +389,125 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Projek UAS ADS Manajemen - Warung Tenongan Bu Tutik. All Rights Reserved.</p>
+            <p>&copy; 2026 Projek UAS Manajemen Ads &mdash; Nalendra W.H.P (BD2303008) &amp; La Yandi (BD2303005) &mdash; Politeknik Akbara Surakarta. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
+        // ============================================================
+        // DATA PRODUK
+        // ============================================================
         const products = {
-            arem: { name: "Arem-Arem Mie (Hero Product)", price: 3500, qty: 0 },
-            katsu: { name: "Chicken Katsu Sambal Matah", price: 12000, qty: 0 },
-            nasgor: { name: "Nasi Goreng", price: 10000, qty: 0 },
-            sosisJumbo: { name: "Sosis Jumbo", price: 7000, qty: 0 },
-            kremes: { name: "Kremes Kaldu Ayam", price: 5000, qty: 0 },
-            jenang: { name: "Jenang Tradisional", price: 5000, qty: 0 },
-            balung: { name: "Balung Kethek", price: 4000, qty: 0 },
-            jajanan: { name: "Aneka Jajanan Pasar (Serba 2.5k)", price: 2500, qty: 0 }
+            arem:      { name: "Arem-Arem Mie (Hero Product)",        price: 3500,  qty: 0 },
+            katsu:     { name: "Chicken Katsu Sambal Matah",           price: 12000, qty: 0 },
+            nasgor:    { name: "Nasi Goreng",                          price: 10000, qty: 0 },
+            sosisJumbo:{ name: "Sosis Jumbo",                          price: 7000,  qty: 0 },
+            kremes:    { name: "Kremes Kaldu Ayam",                    price: 5000,  qty: 0 },
+            jenang:    { name: "Jenang Tradisional",                   price: 5000,  qty: 0 },
+            balung:    { name: "Balung Kethek",                        price: 4000,  qty: 0 },
+            jajanan:   { name: "Aneka Jajanan Pasar (Serba 2.5k)",     price: 2500,  qty: 0 }
         };
 
+        // ============================================================
+        // FIX: Render semua item menu ke dalam #menu-items-container
+        // ============================================================
+        function renderMenu() {
+            const container = document.getElementById('menu-items-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            Object.keys(products).forEach(function(key) {
+                const item = products[key];
+                const row = document.createElement('div');
+                row.className = 'menu-item-row';
+                row.style.cssText = 'display:flex; align-items:center; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.07);';
+                row.innerHTML =
+                    '<div style="flex:1; font-size:14px;">' +
+                        '<div style="font-weight:600;">' + item.name + '</div>' +
+                        '<div style="color:#888; font-size:12px;">Rp' + item.price.toLocaleString('id-ID') + ' / pcs</div>' +
+                    '</div>' +
+                    '<div style="display:flex; align-items:center; gap:8px; margin-left:12px;">' +
+                        '<button onclick="changeQuantity(\'' + key + '\', -1)" ' +
+                            'style="width:28px;height:28px;border-radius:50%;border:1px solid #ccc;background:#fff;cursor:pointer;font-size:16px;line-height:1;">−</button>' +
+                        '<span id="qty-' + key + '" style="min-width:20px;text-align:center;font-weight:700;">0</span>' +
+                        '<button onclick="changeQuantity(\'' + key + '\', 1)" ' +
+                            'style="width:28px;height:28px;border-radius:50%;border:none;background:#16a34a;color:#fff;cursor:pointer;font-size:16px;line-height:1;">+</button>' +
+                    '</div>';
+                container.appendChild(row);
+            });
+        }
+
+        // ============================================================
+        // Tambah dari tombol menu di atas (tombol + di kartu menu)
+        // ============================================================
         function addQuickMenu(key) {
-            if(products[key]) {
+            if (products[key]) {
                 changeQuantity(key, 1);
                 document.getElementById('pesan').scrollIntoView({ behavior: 'smooth' });
             }
         }
 
+        // ============================================================
+        // Update qty & total
+        // ============================================================
         function changeQuantity(key, amount) {
             const product = products[key];
             if (!product) return;
             product.qty = Math.max(0, product.qty + amount);
-            document.getElementById(`qty-${key}`).innerText = product.qty;
+            const el = document.getElementById('qty-' + key);
+            if (el) el.innerText = product.qty;
             calculateTotal();
         }
 
         function calculateTotal() {
             let total = 0;
-            for (const key in products) { total += products[key].qty * products[key].price; }
-            document.getElementById('total-price').innerText = "Rp" + total.toLocaleString('id-ID');
+            Object.keys(products).forEach(function(key) {
+                total += products[key].qty * products[key].price;
+            });
+            document.getElementById('total-price').innerText = 'Rp' + total.toLocaleString('id-ID');
         }
 
+        // ============================================================
+        // FIX: Gunakan ID yang benar (buyer-name & pickup-time)
+        // ============================================================
         function sendOrder() {
-            const name = document.getElementById('order-name').value.trim();
-            const timeInput = document.getElementById('order-time').value;
-            if (!name) { alert("Mohon isi nama pembeli."); return; }
-            
-            let hasItems = false, itemsText = "", grandTotal = 0;
-            for (const key in products) {
+            const name     = document.getElementById('buyer-name').value.trim();
+            const timeInput = document.getElementById('pickup-time').value;
+
+            if (!name) { alert('Mohon isi nama pembeli.'); return; }
+
+            let hasItems = false, itemsText = '', grandTotal = 0;
+            Object.keys(products).forEach(function(key) {
                 const item = products[key];
                 if (item.qty > 0) {
                     hasItems = true;
-                    let sub = item.qty * item.price;
+                    const sub = item.qty * item.price;
                     grandTotal += sub;
-                    itemsText += `- ${item.name} (${item.qty}x) : Rp${sub.toLocaleString('id-ID')}\n`;
+                    itemsText += '- ' + item.name + ' (' + item.qty + 'x) : Rp' + sub.toLocaleString('id-ID') + '\n';
                 }
-            }
-            if (!hasItems) { alert("Pilih jumlah jajan terlebih dahulu."); return; }
-            
-            const waNumber = "6281325195794"; 
-            const textMsg = `Halo Warung Tenongan Bu Tutik, berikut simulasi daftar belanjaan:\n\nNama: ${name}\nRencana Ambil Jam: ${timeInput} WIB\n\n*Rincian Menu:*\n${itemsText}\n*Total Biaya:* Rp${grandTotal.toLocaleString('id-ID')}`;
-            window.open(`https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(textMsg)}`, '_blank');
+            });
+
+            if (!hasItems) { alert('Pilih jumlah jajan terlebih dahulu.'); return; }
+
+            const waNumber = '6281325195794';
+            const textMsg  =
+                'Halo Warung Tenongan Bu Tutik, berikut simulasi daftar belanjaan:\n\n' +
+                'Nama: ' + name + '\n' +
+                'Rencana Ambil Jam: ' + timeInput + ' WIB\n\n' +
+                '*Rincian Menu:*\n' + itemsText +
+                '\n*Total Biaya:* Rp' + grandTotal.toLocaleString('id-ID');
+
+            window.open(
+                'https://api.whatsapp.com/send?phone=' + waNumber + '&text=' + encodeURIComponent(textMsg),
+                '_blank'
+            );
         }
+
+        // ============================================================
+        // FIX: Panggil renderMenu() saat DOM siap
+        // ============================================================
+        document.addEventListener('DOMContentLoaded', renderMenu);
     </script>
+
 </body>
 </html>
