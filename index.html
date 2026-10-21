@@ -432,41 +432,43 @@ src="https://www.facebook.com/tr?id=1222009649987306&ev=PageView&noscript=1"
             document.getElementById('total-price').innerText = 'Rp' + total.toLocaleString('id-ID');
         }
 
-        // ============================================================
-        // FIX: Pengiriman Pesanan via Link WA Rotator
-        // ============================================================
-        function sendOrder() {
-            const name      = document.getElementById('buyer-name').value.trim();
-            const timeInput = document.getElementById('pickup-time').value;
+// ============================================================
+// FIX: Pengiriman Pesanan via Link WA Rotator (Termasuk Format Text)
+// ============================================================
+function sendOrder() {
+    const name      = document.getElementById('buyer-name').value.trim();
+    const timeInput = document.getElementById('pickup-time').value;
 
-            if (!name) { alert('Mohon isi nama pembeli.'); return; }
+    if (!name) { alert('Mohon isi nama pembeli.'); return; }
 
-            let hasItems = false, itemsText = '', grandTotal = 0;
-            Object.keys(products).forEach(function(key) {
-                const item = products[key];
-                if (item.qty > 0) {
-                    hasItems = true;
-                    const sub = item.qty * item.price;
-                    grandTotal += sub;
-                    itemsText += '- ' + item.name + ' (' + item.qty + 'x) : Rp' + sub.toLocaleString('id-ID') + '\n';
-                }
-            });
-
-            if (!hasItems) { alert('Pilih jumlah jajan terlebih dahulu.'); return; }
-
-            const textMsg =
-                'Halo Warung Tenongan Bu Tutik, berikut simulasi daftar belanjaan:\n\n' +
-                'Nama: ' + name + '\n' +
-                'Rencana Ambil Jam: ' + timeInput + ' WIB\n\n' +
-                '*Rincian Menu:*\n' + itemsText +
-                '\n*Total Biaya:* Rp' + grandTotal.toLocaleString('id-ID');
-
-            const rotatorUrl = 'https://app.rotatorwa.com/r/warung-tenongan';
-            const targetUrl  = rotatorUrl + '?text=' + encodeURIComponent(textMsg);
-
-            window.open(targetUrl, '_blank');
+    let hasItems = false, itemsText = '', grandTotal = 0;
+    Object.keys(products).forEach(function(key) {
+        const item = products[key];
+        if (item.qty > 0) {
+            hasItems = true;
+            const sub = item.qty * item.price;
+            grandTotal += sub;
+            itemsText += '- ' + item.name + ' (' + item.qty + 'x) : Rp' + sub.toLocaleString('id-ID') + '\n';
         }
+    });
 
+    if (!hasItems) { alert('Pilih jumlah jajan terlebih dahulu.'); return; }
+
+    const textMsg =
+        'Halo Warung Tenongan Bu Tutik, berikut simulasi daftar belanjaan:\n\n' +
+        'Nama: ' + name + '\n' +
+        'Rencana Ambil Jam: ' + timeInput + ' WIB\n\n' +
+        '*Rincian Menu:*\n' + itemsText +
+        '\n*Total Biaya:* Rp' + grandTotal.toLocaleString('id-ID');
+
+    const rotatorUrl = 'https://app.rotatorwa.com/r/warung-tenongan';
+    const encodedText = encodeURIComponent(textMsg);
+
+    // Menggunakan beberapa variasi parameter agar terbaca sempurna oleh RotatorWA
+    const targetUrl  = rotatorUrl + '?text=' + encodedText + '&message=' + encodedText;
+
+    window.open(targetUrl, '_blank');
+}
         // ============================================================
         // FIX: Panggil renderMenu() saat DOM siap
         // ============================================================
