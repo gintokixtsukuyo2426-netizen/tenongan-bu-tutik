@@ -461,11 +461,10 @@ function sendOrder() {
         '*Rincian Menu:*\n' + itemsText +
         '\n*Total Biaya:* Rp' + grandTotal.toLocaleString('id-ID');
 
-    const rotatorUrl = 'https://app.rotatorwa.com/r/warung-tenongan';
-    const encodedText = encodeURIComponent(textMsg);
-
-    // Menggunakan beberapa variasi parameter agar terbaca sempurna oleh RotatorWA
-    const targetUrl  = rotatorUrl + '?text=' + encodedText + '&message=' + encodedText;
+       // Pakai rotator sendiri; teruskan parameter iklan (utm_..., fbclid) + isi pesanan
+    const params = new URLSearchParams(location.search);
+    params.set('text', textMsg);
+    const targetUrl = 'https://gintokixtsukuyo2426-netizen.github.io/wa_rotator/?' + params.toString();
 
     window.open(targetUrl, '_blank');
 }
