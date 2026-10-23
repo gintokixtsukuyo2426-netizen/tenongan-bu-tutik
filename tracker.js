@@ -11,6 +11,7 @@
   // ==================
 
   if (API_URL.indexOf('script.google.com') === -1) return; // belum diisi: tracker mati
+       if (window.self !== window.top) return; // jangan merekam saat dibuka di halaman heatmap
 
   var q = new URLSearchParams(location.search);
   var iklan = {
